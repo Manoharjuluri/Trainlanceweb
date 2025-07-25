@@ -25,10 +25,7 @@ To evaluate and certify the progress of our learners, Trainlance conducts online
  
 With a student-centric approach and a commitment to excellence, Trainlance strives to become a trusted partner in every student’s journey from college to career.
             </p>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Our mission is to provide world-class education through innovative teaching methods, personalized 
-              attention, and continuous support to help every student achieve their career goals.
-            </p>
+           
             
             <div className="grid grid-cols-2 gap-6 mb-8">
               <Card className="bg-gradient-card backdrop-blur-sm border-border/30">
