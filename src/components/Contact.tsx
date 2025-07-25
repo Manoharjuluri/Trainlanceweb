@@ -110,7 +110,7 @@ const Contact = () => {
               </div>
               
               <Button variant="hero" className="w-full text-lg py-6">
-                Send Message
+               Submit
               </Button>
             </CardContent>
           </Card>
