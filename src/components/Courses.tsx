@@ -65,7 +65,11 @@ const Courses = () => {
                   ))}
                 </ul>
                 
-                <Button variant="modern" className="w-full group-hover:scale-105 transition-transform">
+                <Button 
+                  variant="modern" 
+                  className="w-full group-hover:scale-105 transition-transform"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
                   Enroll Now
                 </Button>
               </CardContent>
