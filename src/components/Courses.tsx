@@ -31,7 +31,7 @@ const Courses = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cool-dark to-primary bg-clip-text text-transparent">
-            Our Training Programs
+            Our Training functions
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Comprehensive courses designed to accelerate your career growth with industry-relevant skills and expert guidance.
