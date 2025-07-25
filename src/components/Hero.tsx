@@ -34,7 +34,12 @@ const Hero = () => {
             <Button variant="hero" size="lg" className="text-lg px-8 py-6">
               Start Learning Today
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-background/80 backdrop-blur-sm">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="text-lg px-8 py-6 bg-background/80 backdrop-blur-sm"
+              onClick={() => document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Explore Courses
             </Button>
           </div>
