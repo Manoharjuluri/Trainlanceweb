@@ -11,9 +11,19 @@ const About = () => {
               About Trainlance
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Based in the thriving tech hub of Hyderabad, Trainlance is dedicated to bridging the gap between 
-              academic learning and industry requirements. We focus on practical, hands-on training that prepares 
-              students for real-world challenges.
+          Trainlance is a dynamic and forward-thinking EdTech company dedicated to empowering university students across India with the skills and confidence they need to succeed in today’s competitive job market. Our mission is to bridge the gap between academic knowledge and industry expectations by delivering comprehensive, practical, and personalized training programs.
+ 
+At Trainlance, we offer a holistic learning experience that covers three essential pillars of career readiness:
+ 
+Aptitude Training – Sharpening logical reasoning, numerical ability, and problem-solving skills to prepare students for campus placements and competitive exams.
+ 
+Soft Skills & Communication Training – Enhancing interpersonal skills, public speaking, group discussion strategies, resume building, and interview etiquette to build confident professionals.
+ 
+Programming & Technical Training – Delivering hands-on training in popular programming languages such as Python, Java, C, and C++, along with real-world coding challenges to strengthen technical proficiency.
+ 
+To evaluate and certify the progress of our learners, Trainlance conducts online certification exams, giving students credible proof of their skills. In addition, we provide specialized placement training to prepare students for corporate recruitment processes, including mock interviews, aptitude test simulations, and HR grooming sessions.
+ 
+With a student-centric approach and a commitment to excellence, Trainlance strives to become a trusted partner in every student’s journey from college to career.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Our mission is to provide world-class education through innovative teaching methods, personalized 
