@@ -3,21 +3,20 @@ import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-cool-light via-background to-secondary/30 overflow-hidden">
-      {/* Background Image */}
+    <section className="relative min-h-screen flex items-center justify-center bg-warm-gray overflow-hidden">
+      {/* Background Pattern */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Trainlance EdTech Platform" 
-          className="w-full h-full object-cover opacity-10"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
+        <div className="absolute top-0 left-0 w-full h-full opacity-40">
+          <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-accent/10 rounded-full blur-3xl"></div>
+        </div>
       </div>
       
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-4 h-4 bg-accent rounded-full animate-float opacity-60"></div>
+      <div className="absolute top-20 left-10 w-4 h-4 bg-accent/40 rounded-full animate-float"></div>
       <div className="absolute top-40 right-20 w-6 h-6 bg-primary/30 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
-      <div className="absolute bottom-32 left-1/4 w-3 h-3 bg-cool-teal rounded-full animate-float" style={{animationDelay: '2s'}}></div>
+      <div className="absolute bottom-32 left-1/4 w-3 h-3 bg-cool-teal/40 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
       
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="max-w-4xl mx-auto">

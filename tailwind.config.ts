@@ -60,6 +60,7 @@ export default {
 					dark: 'hsl(var(--cool-dark))',
 					light: 'hsl(var(--cool-light))'
 				},
+				'warm-gray': 'hsl(var(--warm-gray))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -79,7 +80,8 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-card': 'var(--gradient-card)'
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-section': 'var(--gradient-section)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
