@@ -19,7 +19,7 @@ Aptitude Training – Sharpening logical reasoning, numerical ability, and probl
  
 Soft Skills & Communication Training – Enhancing interpersonal skills, public speaking, group discussion strategies, resume building, and interview etiquette to build confident professionals.
  
-Programming & Technical Training – Delivering hands-on training in popular programming languages such as Python, Java, C, and C++, along with real-world coding challenges to strengthen technical proficiency.
+Programming & Technical Training – Delivering hands-on training in popular programming languages such as Python, Java, C, and C++, ReactJS,SQL and many more along with real-world coding challenges to strengthen technical proficiency.
  
 To evaluate and certify the progress of our learners, Trainlance conducts online certification exams, giving students credible proof of their skills. In addition, we provide specialized placement training to prepare students for corporate recruitment processes, including mock interviews, aptitude test simulations, and HR grooming sessions.
  
