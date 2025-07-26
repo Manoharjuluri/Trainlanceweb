@@ -1,9 +1,73 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    email_id: "",
+    course: "programming training",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://yu95n8iwna.execute-api.ca-central-1.amazonaws.com/default/m1", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          course: [formData.course]
+        }),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        toast({
+          title: "Success!",
+          description: "Your message has been sent successfully. We'll get back to you within 24 hours.",
+        });
+        // Reset form
+        setFormData({
+          first_name: "",
+          last_name: "",
+          email_id: "",
+          course: "programming training",
+          message: ""
+        });
+      } else {
+        throw new Error("Failed to submit form");
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send your message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-12 md:py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -74,44 +138,83 @@ const Contact = () => {
                 Fill out the form below and we'll get back to you within 24 hours.
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="text-sm font-medium text-cool-dark mb-2 block">First Name</label>
-                  <Input placeholder="John" className="bg-background/50 border-border/50" />
+            <CardContent>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-sm font-medium text-cool-dark mb-2 block">First Name</label>
+                    <Input 
+                      name="first_name"
+                      value={formData.first_name}
+                      onChange={handleInputChange}
+                      placeholder="John" 
+                      className="bg-background/50 border-border/50" 
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-cool-dark mb-2 block">Last Name</label>
+                    <Input 
+                      name="last_name"
+                      value={formData.last_name}
+                      onChange={handleInputChange}
+                      placeholder="Doe" 
+                      className="bg-background/50 border-border/50" 
+                      required
+                    />
+                  </div>
                 </div>
+                
                 <div>
-                  <label className="text-sm font-medium text-cool-dark mb-2 block">Last Name</label>
-                  <Input placeholder="Doe" className="bg-background/50 border-border/50" />
+                  <label className="text-sm font-medium text-cool-dark mb-2 block">Email</label>
+                  <Input 
+                    type="email" 
+                    name="email_id"
+                    value={formData.email_id}
+                    onChange={handleInputChange}
+                    placeholder="john@example.com" 
+                    className="bg-background/50 border-border/50" 
+                    required
+                  />
                 </div>
-              </div>
-              
-              <div>
-                <label className="text-sm font-medium text-cool-dark mb-2 block">Email</label>
-                <Input type="email" placeholder="john@example.com" className="bg-background/50 border-border/50" />
-              </div>
-              
-              <div>
-                <label className="text-sm font-medium text-cool-dark mb-2 block">Course Interest</label>
-                <select className="w-full px-3 py-2 bg-background/50 border border-border/50 rounded-md text-foreground">
-                  <option>Programming Training</option>
-                  <option>Aptitude Training</option>
-                  <option>Soft Skills Training</option>
-                  <option>All Courses</option>
-                </select>
-              </div>
-              
-              <div>
-                <label className="text-sm font-medium text-cool-dark mb-2 block">Message</label>
-                <Textarea 
-                  placeholder="Tell us about your learning goals..."
-                  className="bg-background/50 border-border/50 min-h-[120px]"
-                />
-              </div>
-              
-              <Button variant="hero" className="w-full text-lg py-6">
-               Submit
-              </Button>
+                
+                <div>
+                  <label className="text-sm font-medium text-cool-dark mb-2 block">Course Interest</label>
+                  <select 
+                    name="course"
+                    value={formData.course}
+                    onChange={handleInputChange}
+                    className="w-full px-3 py-2 bg-background/50 border border-border/50 rounded-md text-foreground"
+                    required
+                  >
+                    <option value="programming training">Programming Training</option>
+                    <option value="aptitude training">Aptitude Training</option>
+                    <option value="softskill training">Soft Skills Training</option>
+                    <option value="all course">All Courses</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label className="text-sm font-medium text-cool-dark mb-2 block">Message</label>
+                  <Textarea 
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    placeholder="Tell us about your learning goals..."
+                    className="bg-background/50 border-border/50 min-h-[120px]"
+                    required
+                  />
+                </div>
+                
+                <Button 
+                  type="submit" 
+                  variant="hero" 
+                  className="w-full text-lg py-6"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Submitting..." : "Submit"}
+                </Button>
+              </form>
             </CardContent>
           </Card>
         </div>
