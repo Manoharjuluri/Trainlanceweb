@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -29,10 +29,14 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
+      console.log("Submitting form data:", formData);
+      
       const response = await fetch("https://yu95n8iwna.execute-api.ca-central-1.amazonaws.com/default/m1", {
         method: "POST",
+        mode: "cors",
         headers: {
           "Content-Type": "application/json",
+          "Accept": "application/json",
         },
         body: JSON.stringify({
           ...formData,
@@ -40,8 +44,12 @@ const Contact = () => {
         }),
       });
 
+      console.log("Response status:", response.status);
+      console.log("Response headers:", response.headers);
+
       if (response.ok) {
         const result = await response.json();
+        console.log("Success response:", result);
         toast({
           title: "Success!",
           description: "Your message has been sent successfully. We'll get back to you within 24 hours.",
@@ -55,12 +63,16 @@ const Contact = () => {
           message: ""
         });
       } else {
-        throw new Error("Failed to submit form");
+        const errorText = await response.text();
+        console.error("API Error:", response.status, errorText);
+        throw new Error(`Server responded with ${response.status}: ${errorText}`);
       }
     } catch (error) {
+      console.error("Form submission error:", error);
+      const errorMessage = error instanceof Error ? error.message : "Unknown error occurred";
       toast({
         title: "Error",
-        description: "Failed to send your message. Please try again.",
+        description: `Failed to send your message: ${errorMessage}. Please try again.`,
         variant: "destructive",
       });
     } finally {
