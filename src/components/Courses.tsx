@@ -27,7 +27,7 @@ const Courses = () => {
   ];
 
   return (
-    <section id="courses" className="py-20 bg-gradient-section">
+    <section id="courses" className="py-12 md:py-20 bg-gradient-section">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cool-dark to-primary bg-clip-text text-transparent">

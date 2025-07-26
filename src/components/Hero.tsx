@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-warm-gray overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-warm-gray overflow-hidden py-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
@@ -20,12 +20,12 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cool-dark via-primary to-accent bg-clip-text text-transparent">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 bg-gradient-to-r from-cool-dark via-primary to-accent bg-clip-text text-transparent leading-tight">
             Transform Your Career with
             <span className="block text-primary">Trainlance</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-4xl mx-auto px-4">
             Master in-demand skills with our comprehensive training programs. 
             From programming to soft skills, we provide personalized learning experiences with expert mentorship.
           </p>
