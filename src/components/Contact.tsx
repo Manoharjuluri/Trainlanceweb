@@ -11,7 +11,7 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cool-dark to-primary bg-clip-text text-transparent">
             Start Your Learning Journey
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-foreground max-w-3xl mx-auto">
             Ready to transform your career? Get in touch with us and discover how Trainlance can help you achieve your goals.
           </p>
         </div>
