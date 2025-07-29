@@ -57,14 +57,13 @@ export default {
 					blue: 'hsl(var(--cool-blue))',
 					teal: 'hsl(var(--cool-teal))',
 					purple: 'hsl(var(--cool-purple))',
-					cyan: 'hsl(var(--cool-cyan))',
-					indigo: 'hsl(var(--cool-indigo))',
 					dark: 'hsl(var(--cool-dark))',
 					light: 'hsl(var(--cool-light))'
 				},
 				'warm-gray': 'hsl(var(--warm-gray))',
-				'neon-blue': 'hsl(var(--neon-blue))',
-				'electric-purple': 'hsl(var(--electric-purple))',
+				'professional-blue': 'hsl(var(--professional-blue))',
+				'professional-gray': 'hsl(var(--professional-gray))',
+				'professional-light': 'hsl(var(--professional-light))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -86,16 +85,13 @@ export default {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-card': 'var(--gradient-card)',
 				'gradient-section': 'var(--gradient-section)',
-				'gradient-glass': 'var(--gradient-glass)',
-				'gradient-hover': 'var(--gradient-hover)'
+				'gradient-subtle': 'var(--gradient-subtle)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
 				'medium': 'var(--shadow-medium)',
 				'strong': 'var(--shadow-strong)',
-				'glow': 'var(--shadow-glow)',
-				'neon': 'var(--shadow-neon)',
-				'purple': 'var(--shadow-purple)'
+				'card': 'var(--shadow-card)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)',

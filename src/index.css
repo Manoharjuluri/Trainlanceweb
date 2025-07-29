@@ -39,39 +39,33 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Enhanced color palette with vibrant cool tones */
+    /* Professional color palette */
     --cool-blue: 217 91% 60%;
     --cool-teal: 142 76% 47%;
     --cool-purple: 262 83% 58%;
-    --cool-cyan: 186 85% 57%;
-    --cool-indigo: 235 85% 67%;
     --cool-dark: 220 26% 14%;
     --cool-light: 0 0% 98%;
     --warm-gray: 220 14% 96%;
-    --neon-blue: 205 100% 70%;
-    --electric-purple: 270 100% 75%;
+    --professional-blue: 214 95% 36%;
+    --professional-gray: 215 16% 47%;
+    --professional-light: 220 23% 95%;
 
-    /* Enhanced gradients with modern aesthetics */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--neon-blue)) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--cool-cyan)) 50%, hsl(var(--electric-purple)) 100%);
+    /* Professional gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--professional-blue)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--cool-teal)) 100%);
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(215 28% 98%) 100%);
     --gradient-section: linear-gradient(180deg, hsl(0 0% 99%) 0%, hsl(215 28% 97%) 100%);
-    --gradient-glass: linear-gradient(145deg, hsl(0 0% 100% / 0.9) 0%, hsl(215 28% 98% / 0.8) 100%);
-    --gradient-hover: linear-gradient(135deg, hsl(var(--cool-cyan)) 0%, hsl(var(--electric-purple)) 100%);
+    --gradient-subtle: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(var(--professional-light)) 100%);
 
-    /* Enhanced shadows with color tints */
-    --shadow-soft: 0 2px 8px hsl(220 26% 14% / 0.08);
-    --shadow-medium: 0 4px 16px hsl(220 26% 14% / 0.12);
-    --shadow-strong: 0 8px 32px hsl(220 26% 14% / 0.16);
-    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.3);
-    --shadow-neon: 0 0 30px hsl(var(--neon-blue) / 0.4);
-    --shadow-purple: 0 0 25px hsl(var(--electric-purple) / 0.35);
+    /* Professional shadows */
+    --shadow-soft: 0 2px 8px hsl(220 26% 14% / 0.06);
+    --shadow-medium: 0 4px 16px hsl(220 26% 14% / 0.10);
+    --shadow-strong: 0 8px 32px hsl(220 26% 14% / 0.12);
+    --shadow-card: 0 1px 3px hsl(220 26% 14% / 0.05);
 
-    /* Advanced transitions */
+    /* Smooth transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    --transition-elastic: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    --transition-fast: all 0.15s ease-out;
 
     --sidebar-background: 0 0% 98%;
 
