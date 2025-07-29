@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="about" className="py-12 md:py-20 bg-gradient-section relative bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80)'}}>
       <div className="absolute inset-0 bg-background/90 backdrop-blur-sm"></div>
@@ -43,7 +46,12 @@ With a student-centric approach and a commitment to excellence, Trainlance striv
               </Card>
             </div>
             
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-8 py-6"
+              onClick={() => navigate('/about-us')}
+            >
               Learn More About Us
             </Button>
           </div>
