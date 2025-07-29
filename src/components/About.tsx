@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section id="about" className="py-12 md:py-20 bg-gradient-section">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-middle">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cool-dark to-primary bg-clip-text text-transparent">
               About Trainlance
