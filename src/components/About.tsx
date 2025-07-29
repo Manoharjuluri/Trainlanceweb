@@ -73,10 +73,10 @@ With a student-centric approach and a commitment to excellence, Trainlance striv
                   </div>
                 </div>
                 
-                <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20">
-                  <h4 className="text-lg font-semibold text-primary mb-2">Why Hyderabad?</h4>
+                {/* <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20">
+              
 
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           </div>
