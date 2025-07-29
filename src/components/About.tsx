@@ -75,10 +75,7 @@ With a student-centric approach and a commitment to excellence, Trainlance striv
                 
                 <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20">
                   <h4 className="text-lg font-semibold text-primary mb-2">Why Hyderabad?</h4>
-                  <p className="text-muted-foreground">
-                    As one of India's leading IT hubs, Hyderabad provides us with direct access to industry 
-                    trends and expert professionals who contribute to our curriculum and mentorship programs.
-                  </p>
+
                 </div>
               </CardContent>
             </Card>
