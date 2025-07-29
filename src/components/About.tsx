@@ -6,8 +6,8 @@ const About = () => {
   const navigate = useNavigate();
 
   return (
-    <section id="about" className="py-12 md:py-20 bg-gradient-section relative bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80)'}}>
-      <div className="absolute inset-0 bg-background/90 backdrop-blur-sm"></div>
+    <section id="about" className="py-12 md:py-20 bg-gradient-section relative">
+      <div className="absolute inset-0 bg-gradient-to-br from-business-light via-background to-business-light/50"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
