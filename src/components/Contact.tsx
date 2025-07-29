@@ -199,6 +199,7 @@ const Contact = () => {
                     className="w-full px-3 py-2 bg-background/50 border border-border/50 rounded-md text-foreground"
                     required
                   >
+                    <option value="select">Select</option>
                     <option value="programming training">Programming Training</option>
                     <option value="aptitude training">Aptitude Training</option>
                     <option value="softskill training">Soft Skills Training</option>
