@@ -56,7 +56,7 @@ With a student-centric approach and a commitment to excellence, Trainlance striv
             </Button>
           </div>
           
-          <div className="relative">
+          <div className="relative space-y-6">
             <div className="absolute inset-0 bg-gradient-hero rounded-3xl transform rotate-6 opacity-20"></div>
             <Card className="relative bg-gradient-card backdrop-blur-sm border-border/30 shadow-strong">
               <CardContent className="p-8">
@@ -81,11 +81,16 @@ With a student-centric approach and a commitment to excellence, Trainlance striv
                     <span className="text-foreground font-medium">Flexible Scheduling</span>
                   </div>
                 </div>
-                
-                {/* <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20">
-              
-
-                </div> */}
+              </CardContent>
+            </Card>
+            
+            <Card className="relative bg-gradient-card backdrop-blur-sm border-border/30 shadow-strong">
+              <CardContent className="p-8">
+                <img 
+                  src="/lovable-uploads/03aa9c1a-37c1-420f-a738-ce45f0fa59de.png" 
+                  alt="Students learning together" 
+                  className="w-full h-auto rounded-lg object-cover"
+                />
               </CardContent>
             </Card>
           </div>
