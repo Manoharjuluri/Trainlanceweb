@@ -57,42 +57,47 @@ With a student-centric approach and a commitment to excellence, Trainlance striv
           </div>
           
           <div className="relative space-y-6">
-            <div className="absolute inset-0 bg-gradient-hero rounded-3xl transform rotate-6 opacity-20"></div>
-            <Card className="relative bg-gradient-card backdrop-blur-sm border-border/30 shadow-strong">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-cool-dark mb-6">Our Location</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">📍</span>
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-hero rounded-3xl transform rotate-6 opacity-20"></div>
+              <Card className="relative bg-gradient-card backdrop-blur-sm border-border/30 shadow-strong">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-cool-dark mb-6">Our Location</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                        <span className="text-white text-sm">📍</span>
+                      </div>
+                      <span className="text-foreground font-medium">Hyderabad, Telangana</span>
                     </div>
-                    <span className="text-foreground font-medium">Hyderabad, Telangana</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">🌐</span>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
+                        <span className="text-white text-sm">🌐</span>
+                      </div>
+                      <span className="text-foreground font-medium">Online Learning Platform</span>
                     </div>
-                    <span className="text-foreground font-medium">Online Learning Platform</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-cool-teal rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">⏰</span>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-cool-teal rounded-full flex items-center justify-center">
+                        <span className="text-white text-sm">⏰</span>
+                      </div>
+                      <span className="text-foreground font-medium">Flexible Scheduling</span>
                     </div>
-                    <span className="text-foreground font-medium">Flexible Scheduling</span>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </div>
             
-            <Card className="relative bg-gradient-card backdrop-blur-sm border-border/30 shadow-strong">
-              <CardContent className="p-8">
-                <img 
-                  src="/lovable-uploads/03aa9c1a-37c1-420f-a738-ce45f0fa59de.png" 
-                  alt="Students learning together" 
-                  className="w-full h-auto rounded-lg object-cover"
-                />
-              </CardContent>
-            </Card>
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-hero rounded-3xl transform -rotate-6 opacity-20"></div>
+              <Card className="relative bg-gradient-card backdrop-blur-sm border-border/30 shadow-strong">
+                <CardContent className="p-8">
+                  <img 
+                    src="/lovable-uploads/03aa9c1a-37c1-420f-a738-ce45f0fa59de.png" 
+                    alt="Students learning together" 
+                    className="w-full h-auto rounded-lg object-cover"
+                  />
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
