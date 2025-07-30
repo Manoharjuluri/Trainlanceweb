@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-cool-dark leading-tight">
             Transform Your Career with
-            <span className="block text-primary">Trainlance</span>
+            <span className="block text-primary">Campus Career Club</span>
           </h1>
           
           <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-4xl mx-auto px-4">

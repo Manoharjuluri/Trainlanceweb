@@ -21,7 +21,7 @@ const AboutUs = () => {
         <div className="max-w-6xl mx-auto">
           <header className="text-center mb-12">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cool-dark to-primary bg-clip-text text-transparent">
-              About Trainlance
+              About Campus Career Club
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Empowering India's Future Workforce Through Comprehensive Skill Development
@@ -62,7 +62,7 @@ const AboutUs = () => {
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-cool-dark mb-6">Our Mission</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Trainlance is a dynamic and forward-thinking EdTech company dedicated to empowering university students across India with the skills and confidence they need to succeed in today's competitive job market. Our mission is to bridge the gap between academic knowledge and industry expectations by delivering comprehensive, practical, and personalized training programs.
+                  Campus Career Club is a dynamic and forward-thinking EdTech company dedicated to empowering university students across India with the skills and confidence they need to succeed in today's competitive job market. Our mission is to bridge the gap between academic knowledge and industry expectations by delivering comprehensive, practical, and personalized training programs.
                 </p>
               </CardContent>
             </Card>
@@ -110,7 +110,7 @@ const AboutUs = () => {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-cool-teal mb-4">💻 Programming & Technical Training</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Trainlance provides hands-on training in industry-relevant programming languages and frameworks including Python, Java, C, C++, SQL, ReactJS, HTML/CSS, and more. Our courses emphasize project-based learning, where students solve real-world coding challenges and build functional applications. This approach ensures not only concept mastery but also a robust project portfolio to showcase to potential employers.
+                    Campus Career Club provides hands-on training in industry-relevant programming languages and frameworks including Python, Java, C, C++, SQL, ReactJS, HTML/CSS, and more. Our courses emphasize project-based learning, where students solve real-world coding challenges and build functional applications. This approach ensures not only concept mastery but also a robust project portfolio to showcase to potential employers.
                   </p>
                 </CardContent>
               </Card>
@@ -128,7 +128,7 @@ const AboutUs = () => {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-primary mb-4">📜 Certification & Progress Tracking</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    To reinforce learning outcomes, Trainlance conducts online certification exams that evaluate students' progress and validate their skills. These certificates serve as credible proof of competency, enhancing resumes and boosting confidence during recruitment drives.
+                    To reinforce learning outcomes, Campus Career Club conducts online certification exams that evaluate students' progress and validate their skills. These certificates serve as credible proof of competency, enhancing resumes and boosting confidence during recruitment drives.
                   </p>
                 </CardContent>
               </Card>
@@ -184,7 +184,7 @@ const AboutUs = () => {
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-cool-dark mb-6">Vision for the Future</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Trainlance is more than just a training platform—we're a career-enabling ecosystem. With a student-first philosophy, we're committed to:
+                  Campus Career Club is more than just a training platform—we're a career-enabling ecosystem. With a student-first philosophy, we're committed to:
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground space-y-3 text-lg ml-4 mb-6">
                   <li>Constantly evolving our curriculum based on industry trends</li>
@@ -192,7 +192,7 @@ const AboutUs = () => {
                   <li>Providing accessible, affordable, and impactful learning</li>
                 </ul>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Whether a student aims to land their first job, crack a competitive exam, or build a foundation for a tech-driven career, Trainlance is their trusted partner from college to career.
+                  Whether a student aims to land their first job, crack a competitive exam, or build a foundation for a tech-driven career, Campus Career Club is their trusted partner from college to career.
                 </p>
               </CardContent>
             </Card>

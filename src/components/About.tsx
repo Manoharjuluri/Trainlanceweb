@@ -12,12 +12,12 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cool-dark to-primary bg-clip-text text-transparent">
-              About Trainlance
+              About Campus Career Club
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-          Trainlance is a dynamic and forward-thinking EdTech company dedicated to empowering university students across India with the skills and confidence they need to succeed in today’s competitive job market. Our mission is to bridge the gap between academic knowledge and industry expectations by delivering comprehensive, practical, and personalized training programs.
+          Campus Career Club is a dynamic and forward-thinking EdTech company dedicated to empowering university students across India with the skills and confidence they need to succeed in today’s competitive job market. Our mission is to bridge the gap between academic knowledge and industry expectations by delivering comprehensive, practical, and personalized training programs.
  
-At Trainlance, we offer a holistic learning experience that covers three essential pillars of career readiness:
+At Campus Career Club, we offer a holistic learning experience that covers three essential pillars of career readiness:
  
 Aptitude Training – Sharpening logical reasoning, numerical ability, and problem-solving skills to prepare students for campus placements and competitive exams.
  
@@ -25,9 +25,9 @@ Soft Skills & Communication Training – Enhancing interpersonal skills, public 
  
 Programming & Technical Training – Delivering hands-on training in popular programming languages such as Python, Java, C, and C++, ReactJS,SQL and many more along with real-world coding challenges to strengthen technical proficiency.
  
-To evaluate and certify the progress of our learners, Trainlance conducts online certification exams, giving students credible proof of their skills. In addition, we provide specialized placement training to prepare students for corporate recruitment processes, including mock interviews, aptitude test simulations, and HR grooming sessions.
+To evaluate and certify the progress of our learners, Campus Career Club conducts online certification exams, giving students credible proof of their skills. In addition, we provide specialized placement training to prepare students for corporate recruitment processes, including mock interviews, aptitude test simulations, and HR grooming sessions.
  
-With a student-centric approach and a commitment to excellence, Trainlance strives to become a trusted partner in every student’s journey from college to career.
+With a student-centric approach and a commitment to excellence, Campus Career Club strives to become a trusted partner in every student’s journey from college to career.
             </p>
            
             
