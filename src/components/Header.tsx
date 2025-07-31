@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   return (
@@ -27,6 +28,7 @@ const Header = () => {
         </nav>
         
         <div className="flex items-center space-x-4">
+          <ThemeToggle />
           <Button variant="ghost" className="hidden md:inline-flex text-professional-gray hover:text-primary">
             Login
           </Button>
