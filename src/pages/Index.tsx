@@ -5,17 +5,21 @@ import Features from "@/components/Features";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <Hero />
-      <Courses />
-      <Features />
-      <About />
-      <Contact />
+      <main>
+        <Hero />
+        <Courses />
+        <Features />
+        <About />
+        <Contact />
+      </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

@@ -31,13 +31,18 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <Button variant="default" size="lg" className="text-lg px-10 py-6 shadow-medium hover:shadow-strong transition-shadow duration-300">
+            <Button 
+              variant="default" 
+              size="lg" 
+              className="text-lg px-10 py-6 shadow-medium hover:shadow-strong transition-all duration-300 hover:scale-105"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Start Learning Today
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="text-lg px-10 py-6 border-2 hover:bg-primary/5 transition-colors duration-300"
+              className="text-lg px-10 py-6 border-2 hover:bg-primary/5 transition-all duration-300 hover:scale-105"
               onClick={() => document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Explore Courses
@@ -45,15 +50,15 @@ const Hero = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="bg-gradient-subtle backdrop-blur-sm rounded-lg p-8 shadow-card border border-border hover:shadow-medium transition-shadow duration-300">
+            <div className="bg-gradient-subtle backdrop-blur-sm rounded-lg p-8 shadow-card border border-border hover:shadow-medium transition-all duration-300 hover:scale-105 animate-fade-in">
               <h3 className="text-3xl font-bold text-primary mb-3">500+</h3>
               <p className="text-professional-gray font-medium">Students Trained</p>
             </div>
-            <div className="bg-gradient-subtle backdrop-blur-sm rounded-lg p-8 shadow-card border border-border hover:shadow-medium transition-shadow duration-300">
+            <div className="bg-gradient-subtle backdrop-blur-sm rounded-lg p-8 shadow-card border border-border hover:shadow-medium transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.2s'}}>
               <h3 className="text-3xl font-bold text-cool-teal mb-3">95%</h3>
               <p className="text-professional-gray font-medium">Success Rate</p>
             </div>
-            <div className="bg-gradient-subtle backdrop-blur-sm rounded-lg p-8 shadow-card border border-border hover:shadow-medium transition-shadow duration-300">
+            <div className="bg-gradient-subtle backdrop-blur-sm rounded-lg p-8 shadow-card border border-border hover:shadow-medium transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.4s'}}>
               <h3 className="text-3xl font-bold text-professional-blue mb-3">24/7</h3>
               <p className="text-professional-gray font-medium">Mentor Support</p>
             </div>

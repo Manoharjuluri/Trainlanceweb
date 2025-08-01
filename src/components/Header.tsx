@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "./ThemeToggle";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   return (
@@ -13,18 +14,34 @@ const Header = () => {
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#courses" className="text-professional-gray hover:text-primary transition-colors duration-300 font-medium">
+          <button 
+            onClick={() => document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' })}
+            className="text-professional-gray hover:text-primary transition-colors duration-300 font-medium relative group"
+          >
             Courses
-          </a>
-          <a href="#features" className="text-professional-gray hover:text-primary transition-colors duration-300 font-medium">
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          <button 
+            onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+            className="text-professional-gray hover:text-primary transition-colors duration-300 font-medium relative group"
+          >
             Features
-          </a>
-          <a href="#about" className="text-professional-gray hover:text-primary transition-colors duration-300 font-medium">
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          <button 
+            onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+            className="text-professional-gray hover:text-primary transition-colors duration-300 font-medium relative group"
+          >
             About
-          </a>
-          <a href="#contact" className="text-professional-gray hover:text-primary transition-colors duration-300 font-medium">
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          <button 
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            className="text-professional-gray hover:text-primary transition-colors duration-300 font-medium relative group"
+          >
             Contact
-          </a>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </button>
         </nav>
         
         <div className="flex items-center space-x-4">
@@ -32,9 +49,10 @@ const Header = () => {
           <Button variant="ghost" className="hidden md:inline-flex text-professional-gray hover:text-primary">
             Login
           </Button>
-          <Button variant="default" className="shadow-card hover:shadow-medium transition-shadow duration-300">
+          <Button variant="default" className="hidden md:inline-flex shadow-card hover:shadow-medium transition-shadow duration-300">
             Get Started
           </Button>
+          <MobileMenu />
         </div>
       </div>
     </header>

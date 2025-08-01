@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import LoadingSpinner from "./LoadingSpinner";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -15,6 +16,23 @@ const Contact = () => {
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
+  const validateForm = () => {
+    const newErrors: Record<string, string> = {};
+    
+    if (!formData.first_name.trim()) newErrors.first_name = "First name is required";
+    if (!formData.last_name.trim()) newErrors.last_name = "Last name is required";
+    if (!formData.email_id.trim()) {
+      newErrors.email_id = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email_id)) {
+      newErrors.email_id = "Email is invalid";
+    }
+    if (!formData.message.trim()) newErrors.message = "Message is required";
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -22,10 +40,23 @@ const Contact = () => {
       ...prev,
       [name]: value
     }));
+    
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors(prev => ({
+        ...prev,
+        [name]: ""
+      }));
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!validateForm()) {
+      return;
+    }
+    
     setIsSubmitting(true);
 
     try {
@@ -160,9 +191,10 @@ const Contact = () => {
                       value={formData.first_name}
                       onChange={handleInputChange}
                       placeholder="John" 
-                      className="bg-background/50 border-border/50" 
+                      className={`bg-background/50 border-border/50 ${errors.first_name ? 'border-destructive' : ''}`}
                       required
                     />
+                    {errors.first_name && <p className="text-sm text-destructive mt-1">{errors.first_name}</p>}
                   </div>
                   <div>
                     <label className="text-sm font-medium text-cool-dark mb-2 block">Last Name</label>
@@ -171,9 +203,10 @@ const Contact = () => {
                       value={formData.last_name}
                       onChange={handleInputChange}
                       placeholder="Doe" 
-                      className="bg-background/50 border-border/50" 
+                      className={`bg-background/50 border-border/50 ${errors.last_name ? 'border-destructive' : ''}`}
                       required
                     />
+                    {errors.last_name && <p className="text-sm text-destructive mt-1">{errors.last_name}</p>}
                   </div>
                 </div>
                 
@@ -185,9 +218,10 @@ const Contact = () => {
                     value={formData.email_id}
                     onChange={handleInputChange}
                     placeholder="john@example.com" 
-                    className="bg-background/50 border-border/50" 
+                    className={`bg-background/50 border-border/50 ${errors.email_id ? 'border-destructive' : ''}`}
                     required
                   />
+                  {errors.email_id && <p className="text-sm text-destructive mt-1">{errors.email_id}</p>}
                 </div>
                 
                 <div>
@@ -214,18 +248,26 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     placeholder="Tell us about your learning goals..."
-                    className="bg-background/50 border-border/50 min-h-[120px]"
+                    className={`bg-background/50 border-border/50 min-h-[120px] ${errors.message ? 'border-destructive' : ''}`}
                     required
                   />
+                  {errors.message && <p className="text-sm text-destructive mt-1">{errors.message}</p>}
                 </div>
                 
                 <Button 
                   type="submit" 
-                  variant="hero" 
-                  className="w-full text-lg py-6"
+                  variant="default" 
+                  className="w-full text-lg py-6 shadow-card hover:shadow-medium transition-all duration-300"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Submitting..." : "Submit"}
+                  {isSubmitting ? (
+                    <div className="flex items-center space-x-2">
+                      <LoadingSpinner size="sm" />
+                      <span>Submitting...</span>
+                    </div>
+                  ) : (
+                    "Send Message"
+                  )}
                 </Button>
               </form>
             </CardContent>
