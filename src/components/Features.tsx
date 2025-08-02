@@ -45,7 +45,7 @@ const Features = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-cool-dark">
-            Why Choose Campus Career Club?
+            Why Choose Trainlance?
           </h2>
           <p className="text-xl text-professional-gray max-w-3xl mx-auto leading-relaxed">
             Experience personalized learning with cutting-edge technology and dedicated mentorship to ensure your success.

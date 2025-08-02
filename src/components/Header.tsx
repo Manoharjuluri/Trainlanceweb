@@ -9,7 +9,7 @@ const Header = () => {
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10 bg-gradient-primary rounded-lg shadow-card"></div>
           <span className="text-2xl font-bold text-cool-dark">
-            Campus Career Club
+            Trainlance
           </span>
         </div>
         

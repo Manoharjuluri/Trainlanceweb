@@ -119,7 +119,7 @@ const Contact = () => {
             Start Your Learning Journey
           </h2>
           <p className="text-xl text-foreground max-w-3xl mx-auto">
-            Ready to transform your career? Get in touch with us and discover how Campus Career Club can help you achieve your goals.
+            Ready to transform your career? Get in touch with us and discover how Trainlance can help you achieve your goals.
           </p>
         </div>
         

@@ -6,7 +6,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-gradient-hero rounded-lg"></div>
-              <span className="text-xl font-bold">Campus Career Club</span>
+              <span className="text-xl font-bold">Trainlance</span>
             </div>
             <p className="text-gray-300 mb-4">
               Empowering careers through comprehensive training and mentorship in technology and professional skills.
@@ -57,7 +57,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2024 Campus Career Club. All rights reserved. | Hyderabad, Telangana, India
+            © 2024 Trainlance. All rights reserved. | Hyderabad, Telangana, India
           </p>
         </div>
       </div>
